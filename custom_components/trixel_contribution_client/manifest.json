@@ -1,0 +1,18 @@
+{
+  "domain": "trixel_contribution_client",
+  "name": "Trixel contribution client",
+  "codeowners": [
+    "@TillFleisch"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/TillFleisch/TrixelContributionIntegration",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "trixelserviceclient==0.0.0"
+  ],
+  "ssdp": [],
+  "zeroconf": [],
+  "version": "0.0.0"
+}
