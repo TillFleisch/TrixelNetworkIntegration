@@ -1,21 +1,48 @@
 {
   "config": {
     "step": {
-      "user": {
+      "general_config": {
         "data": {
-          "host": "[%key:common::config_flow::data::host%]",
-          "username": "[%key:common::config_flow::data::username%]",
-          "password": "[%key:common::config_flow::data::password%]"
+          "trixel_lookup_service_host": "[%key:common::config_flow::data::trixel_lookup_service_host%]",
+          "tls_use_https": "[%key:common::config_flow::data::tls_use_https%]",
+          "tms_use_https": "[%key:common::config_flow::data::tms_use_https%]",
+          "update_interval": "[%key:common::config_flow::data::update_interval%]",
+          "k_privacy": "[%key:common::config_flow::data::k_privacy%]",
+          "maximum_trixel_depth": "[%key:common::config_flow::data::maximum_trixel_depth%]"
+        }
+      },
+      "general_settings_reconfigure": {
+        "data": {
+          "update_interval": "[%key:common::config_flow::data::update_interval%]",
+          "k_privacy": "[%key:common::config_flow::data::k_privacy%]",
+          "maximum_trixel_depth": "[%key:common::config_flow::data::maximum_trixel_depth%]"
+        }
+      },
+      "sensor_selection": {
+        "title": "[%key:common::config_flow::title%]",
+        "data": {
+          "outdoor_temperature_sensors": "[%key:common::config_flow::data::outdoor_temperature_sensors%]",
+          "outdoor_relative_humidity_sensors": "[%key:common::config_flow::data::outdoor_relative_humidity_sensors%]"
+        }
+      },
+      "sensor_selection_reconfigure": {
+        "title": "[%key:common::config_flow::title%]",
+        "data": {
+          "outdoor_temperature_sensors": "[%key:common::config_flow::data::outdoor_temperature_sensors%]",
+          "outdoor_relative_humidity_sensors": "[%key:common::config_flow::data::outdoor_relative_humidity_sensors%]"
         }
       }
     },
     "error": {
       "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
       "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "not_enough_sensors": "[%key:common::config_flow::error::not_enough_sensors%]",
+      "no_home": "[%key:common::config_flow::error::no_home%]",
       "unknown": "[%key:common::config_flow::error::unknown%]"
     },
     "abort": {
-      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "configuration_updated": "[%key:common::config_flow::abort::configuration_updated%]"
     }
   }
 }

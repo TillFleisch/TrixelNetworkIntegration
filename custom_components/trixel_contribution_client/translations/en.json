@@ -1,21 +1,49 @@
 {
-    "config": {
-        "abort": {
-            "already_configured": "Device is already configured"
-        },
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
-            "unknown": "Unexpected error"
-        },
-        "step": {
-            "user": {
-                "data": {
-                    "host": "Host",
-                    "password": "Password",
-                    "username": "Username"
-                }
-            }
+  "config": {
+    "abort": {
+      "already_configured": "Contribution client is already configured",
+      "configuration_updated": "Configuration updated"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "not_enough_sensors": "At least one sensor required!",
+      "no_home": "No Home location configured!",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "general_config": {
+        "data": {
+          "trixel_lookup_service_host": "Trixel lookup server (TLS) host",
+          "tls_use_https": "TLS use HTTPS",
+          "tms_use_https": "TMS use HTTPS",
+          "update_interval": "Publish interval",
+          "k_privacy": "K-Privacy requirement",
+          "maximum_trixel_depth": "Maximum trixel depth",
+          "outdoor_temperature_sensors": "Outdoor ambient temperature sensors"
         }
+      },
+      "general_settings_reconfigure": {
+        "data": {
+          "update_interval": "Publish interval",
+          "k_privacy": "K-Privacy requirement",
+          "maximum_trixel_depth": "Maximum trixel depth"
+        }
+      },
+      "sensor_selection": {
+        "title": "Select Sensors",
+        "data": {
+          "outdoor_temperature_sensors": "Outdoor ambient temperature sensors",
+          "outdoor_relative_humidity_sensors": "Outdoor relative humidity senosrs"
+        }
+      },
+      "sensor_selection_reconfigure": {
+        "title": "Select Sensors",
+        "data": {
+          "outdoor_temperature_sensors": "Outdoor ambient temperature sensors",
+          "outdoor_relative_humidity_sensors": "Outdoor relative humidity senosrs"
+        }
+      }
     }
+  }
 }
